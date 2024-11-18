@@ -1,0 +1,146 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sweeto"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/pendingOrderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending\nOrder\n30"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/completedOrderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed\nOrder\n30"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintStart_toEndOf="@+id/pendingOrderTextView"
+        android:layout_marginStart="32dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/wholeTimeEarningTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whole Time\nEarning\n30$"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintStart_toEndOf="@+id/completedOrderTextView"
+        android:layout_marginStart="32dp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/earningImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dollar"
+        app:layout_constraintTop_toBottomOf="@+id/wholeTimeEarningTextView"
+        app:layout_constraintStart_toStartOf="@+id/wholeTimeEarningTextView"
+        android:layout_marginTop="16dp"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/addMenuButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Menu"
+        app:layout_constraintTop_toBottomOf="@+id/pendingOrderTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/allItemsMenuButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="All Items Menu"
+        app:layout_constraintTop_toBottomOf="@+id/addMenuButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        app:layout_constraintTop_toBottomOf="@+id/allItemsMenuButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/createUserButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Create New User"
+        app:layout_constraintTop_toBottomOf="@+id/profileButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/orderDispatchButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Order Dispatch"
+        app:layout_constraintTop_toBottomOf="@+id/createUserButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        app:layout_constraintTop_toBottomOf="@+id/orderDispatchButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/designByTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Design By/n Dibya"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
